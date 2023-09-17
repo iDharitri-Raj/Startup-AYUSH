@@ -1,5 +1,5 @@
 .head {
-    background-color: darkorange;
+    background-color: rgb(255, 140, 0, 0.7);
 }
 
 #language-container {
@@ -56,6 +56,11 @@ section h1 {
     transform: translateY(-50%);
 }
 
+header {
+    position: relative;
+    z-index: 1;
+}
+
 body {
     font-family: Arial, sans-serif;
 }
@@ -66,22 +71,23 @@ body {
     right: 20px;
 }
 
-.login-link, .register-link {
+.login-link,
+.register-link {
     text-decoration: none;
-    color: #333; 
-    font-size: 15px; 
+    color: #333;
+    font-size: 15px;
     margin-right: 0;
 }
 
 .login-link:before,
 .register-link:before {
-    content: "\00a0"; 
-    padding-right: 10px; 
+    content: "\00a0";
+    padding-right: 10px;
 }
 
 .login-link:hover,
 .register-link:hover {
-    color: #007BFF; 
+    color: #007BFF;
 }
 
 nav ul {
@@ -92,10 +98,11 @@ nav ul {
 }
 
 nav li {
+    font-size: 20px;
     display: inline;
-    width: 100%; 
+    width: 100%;
     margin: 0;
-    padding: 20px;
+    padding: 25px;
 }
 
 nav a {
@@ -106,4 +113,67 @@ nav a {
 
 nav a:hover {
     color: #007BFF;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+}
+
+figure {
+    align-self: flex-start;
+    margin-left: 10px;
+}
+
+.center-box {
+    text-align: center;
+    margin: 20px;
+    width: 40%;
+    background-color: #f2f2f2;
+    padding: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.center-box h2 {
+    display: flex;
+    margin-left: 30px;
+}
+
+.sidebar {
+    align-self: flex-start;
+    width: 350px;
+    top: 150px;
+    right: 20px;
+    margin: 15px;
+    border: 1px solid #ccc;
+    z-index: 0;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    background-color: lightgray;
+}
+
+.sidebar h3 {
+    display: flex;
+    justify-content: center;
+    font-size: 18px;
+}
+
+.sidebar ul {
+    list-style: disc;
+}
+
+.sidebar li {
+    margin-bottom: 10px;
+}
+
+.sidebar a {
+    text-decoration: none;
+    color: blue;
+    transition: color 0.3s;
+}
+
+.sidebar a:hover {
+    color: orange;
 }
