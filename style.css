@@ -246,7 +246,10 @@ figure {
     transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
-/* Center the service titles */
+.service a {
+    text-decoration: none;
+}
+
 .service strong {
     display: block;
     font-size: 18px;
@@ -274,27 +277,23 @@ figure {
     }
 }
 
-/* CSS for Footer */
 footer {
     background-color: #cccccc30;
     color: #000;
     padding: 20px;
-    display: flex; /* Use flexbox to control layout */
-    justify-content: space-between; /* Push content to the edges */
+    display: flex; 
+    justify-content: space-between; 
 }
 
-/* CSS for Left Side */
 .left {
-    display: flex; /* Nested flex container for images */
-    align-items: center; /* Vertically center content */
+    display: flex;
+    align-items: center; 
 }
 
-/* CSS for Right Side (Contact Us) */
 .right {
-    text-align: right; /* Right-align text content */
+    text-align: right; 
 }
 
-/* Style for Contact Us Section */
 .contact-us {
     margin-top: 20px;
 }
